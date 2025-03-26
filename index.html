@@ -51,7 +51,25 @@
 
 <body>
     <!-- SwiperJS JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,  // Mặc định 1 ảnh trên mobile
+      spaceBetween: 10,
+      loop: true, // Vòng lặp
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {  // Responsive
+        640: { slidesPerView: 2, spaceBetween: 20 }, // Tablet
+        1024: { slidesPerView: 3, spaceBetween: 30 }, // Desktop
+      }
+    });
+  });</script>
 
     <!-- START PRELOADER AREA-->
     <div class="preloader">
