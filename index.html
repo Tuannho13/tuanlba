@@ -9,6 +9,9 @@
     <meta name="description" content="Nino - Modern Portfolio Template">
     <meta name="keywords" content="personal, portfolio new, html, one page, bootstrap, new html template, design, creative, onepage, clean, modern">
     <meta name="author" content="Tanvir Hossain">
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- PAGE TITLE -->
     <title>Nino - Modern Portfolio Template</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
@@ -47,6 +50,9 @@
 </head>
 
 <body>
+    <!-- SwiperJS JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- START PRELOADER AREA-->
     <div class="preloader">
         <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
@@ -494,7 +500,22 @@
         </div>
     </section>
     <!-- / END TESTIMONIALS DESIGN AREA -->
-   
+  <div class="carousel-container">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/images/img1.jpg" alt="Image 1"></div>
+      <div class="swiper-slide"><img src="assets/images/img2.jpg" alt="Image 2"></div>
+      <div class="swiper-slide"><img src="assets/images/img3.jpg" alt="Image 3"></div>
+      <div class="swiper-slide"><img src="assets/images/img4.jpg" alt="Image 4"></div>
+    </div>
+    <!-- Nút điều hướng -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Dấu chấm chuyển slide -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
     <!-- START VLOG DESIGN AREA -->
     <section class="blog-area">
         <div class="container">
